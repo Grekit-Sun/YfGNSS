@@ -6,6 +6,7 @@ import android.app.Application;
 import android.content.Context;
 
 import com.yifan.yfgnss.utils.StringUtil;
+import com.yifan.yfgnss.utils.ThreadPoolUtil;
 
 import java.util.List;
 
@@ -20,6 +21,7 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        appInit();
         if(!isMainProcess()){
             return;
         }
@@ -66,5 +68,9 @@ public class MyApplication extends Application {
         return name;
     }
 
+    private void appInit(){
+        //初始化线程池
+        ThreadPoolUtil.getInstance();
+    }
 
 }
