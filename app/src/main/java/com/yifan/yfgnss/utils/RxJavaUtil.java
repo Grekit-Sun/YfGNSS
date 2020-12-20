@@ -17,5 +17,5 @@ public class RxJavaUtil {
                 .subscribe(new Action<AsyncUITaskUtil<T>>())
 //                .subscribe(new Action<AsyncUITaskUtil<T>>() {
 //                },new Action<Throwable>());
-    }
+        https://blog.csdn.net/z2wenfa/article/details/51276626    }
 }
