@@ -166,7 +166,7 @@ public class TestService extends Service {
         return mGnssTestBinder;
     }
 
-    class GnssTestBinder extends Binder {
+    public class GnssTestBinder extends Binder {
         public int getCount() {
             return mCnt;
         }
